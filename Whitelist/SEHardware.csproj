@@ -107,16 +107,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMySerialOutAccess.cs" />
-    <Compile Include="MySerialOut_ModAPI.cs" />
+    <Compile Include="Vrage.Game\ModAPI\IMySerialOutAccess.cs" />
+    <Compile Include="Vrage.Game\ModAPI\Ingame\IMySerialOutAccess.cs" />
+    <Compile Include="Vrage.Game\ModAPI\MySerialOut_ModAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerialDataOut.cs" />
+    <Compile Include="Vrage.Game\ModAPI\Serial Out\SerialDataOut.cs" />
     <Compile Include="SerialOutWhitelist.cs" />
     <Compile Include="Speech.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

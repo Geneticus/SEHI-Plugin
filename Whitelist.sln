@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist", "Whitelist\Whitelist.csproj", "{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15FC3735-3FFB-4D39-B11F-B5D897024C1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEHardware", "Whitelist\SEHardware.csproj", "{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +13,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A1FFDA-E0C0-4AE6-83F5-EAE29F1B47C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
