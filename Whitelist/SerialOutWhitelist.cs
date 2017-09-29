@@ -3,7 +3,6 @@ using System.Linq;
 using VRage.Plugins;
 using VRage.Scripting;
 using VRage.Game.ModAPI;
-using VRage.Game.ModAPI.SerialOutput;
 
 
 namespace Serial.IO
@@ -21,9 +20,9 @@ namespace Serial.IO
             using (var handle = MyScriptCompiler.Static.Whitelist.OpenBatch())
             {
                 handle.AllowNamespaceOfTypes(MyWhitelistTarget.Ingame,
-                    typeof(VRage.Game.ModAPI.MySerialOut.MySerialOut));
+                    typeof(VRage.Game.ModAPI.Ingame.IMySerialOutAccess));
                 handle.AllowNamespaceOfTypes(MyWhitelistTarget.ModApi,
-                    typeof(VRage.Game.ModAPI.MySerialOut.MySerialOut));
+                    typeof(VRage.Game.ModAPI.IMySerialOutAccess));
             }
             MyScriptCompiler.Static.AddConditionalCompilationSymbols("EXTRA_WHITELIST");
             return;

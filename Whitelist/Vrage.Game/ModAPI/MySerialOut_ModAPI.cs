@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using VRage.ModAPI;
-using VRage.Game.ModAPI.SerialOutput;
+using VRage.SerialOutput;
 using VRage.Game.ModAPI;
 using Serial.IO;
 using VRage.Game.ModAPI.Ingame;
 
-namespace VRage.Game.ModAPI.MySerialOut
+namespace VRage.Game.ModAPI
 {
     public class MySerialOut :IMySerialOutAccess
     {

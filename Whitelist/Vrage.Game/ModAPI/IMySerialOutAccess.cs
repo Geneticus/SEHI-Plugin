@@ -6,6 +6,8 @@ using System.Linq;
 using System.Management;
 using System.Text;
 using System.Threading.Tasks;
+using VRage;
+using VRage.SerialOutput;
 using VRage.Game.ModAPI;
 using Serial.IO;
 namespace VRage.Game.ModAPI.Ingame

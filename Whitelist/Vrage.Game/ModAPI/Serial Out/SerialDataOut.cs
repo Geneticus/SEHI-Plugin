@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using VRage.Game.ModAPI;
 using Serial.IO;
 
-namespace VRage.Game.ModAPI.SerialOutput
+namespace VRage.SerialOutput
 {
 
     //Serial String Format (StartBit)(DataType,Item,CurrentValue,MaxValue)(StopBit)
@@ -53,6 +53,9 @@ namespace VRage.Game.ModAPI.SerialOutput
             return null;
         }
     }*/
+    /// <summary>
+    /// This populates a Microcontroller object pulled from WMI combined with User Settings options
+    /// </summary>
     public class Microcontroller
     {
         public Microcontroller(string name, string description, string deviceID, string PNPdeviceID, int baudRate)
@@ -68,9 +71,13 @@ namespace VRage.Game.ModAPI.SerialOutput
         public string DeviceID { get; set; }
         public string PNPDeviceID { get; set; }
         public int BaudRate { get; set; }
-
+        /// <summary>
+        /// Defines a Serial Port to send data to
+        /// </summary>
         public SerialPort serialPort;
-
+        /// <summary>
+        /// Creates an instance of the Port and prepares it to send data
+        /// </summary>
         public void createSerialPort()
         {
             serialPort = new SerialPort(DeviceID, BaudRate);
@@ -97,7 +104,9 @@ namespace VRage.Game.ModAPI.SerialOutput
     //            //serialPort1.Open();
     //        }
     //}
-    
+    /// <summary>
+    /// This is a Serial Port Object
+    /// </summary>
     public class SerialOut
     {
         private static System.IO.Ports.SerialPort serialPort1 = new SerialPort();
